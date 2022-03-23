@@ -6,13 +6,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/tailwind.css" />
-    <!-- ==== WOW JS ==== -->
     <script src="assets/js/wow.min.js"></script>
     <title>Bienvenue</title>
 </head>
 <body class="bg-blue-500">
- 
-   
     <!--nav bar début -->
     <div id="positionNavBar" class="ud-header bg-transparent absolute top-0 
         left-0 z-40 w-full flex items center">
@@ -103,6 +100,7 @@
                             Connexion
                             </a>
                         </div>
+                    </div>
                 </div>
             </div>
             <!-- fin container-->
