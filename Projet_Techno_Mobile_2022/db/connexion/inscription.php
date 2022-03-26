@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <link rel="stylesheet" href="../../app/assets/css/animate.css" />
+    <link rel="stylesheet" href="../../app/assets/css/tailwind.css" />
     
 </head>
 <body class=" bg-blue-500 min-h-screen pt-12 md:pt-20 pb-6 px-2 md:px-0">
@@ -35,7 +35,7 @@
                     <a href="#" class="text-sm text-blue-400 hover:text-purple-700 hover:underline mb-6">Vous avez oublié votre mot de passe ?</a>
                 </div>
                     <button class="bg-blue-200 hover:bg-blue-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl" type="submit">S'inscrire</button>
-                    <a href="index.php" class=" mt-4 text-center bg-blue-200 hover:bg-blue-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl">
+                    <a href="../../index.php" class=" mt-4 text-center bg-blue-200 hover:bg-blue-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl">
                         <button type="button" value="click here">Retour à l'accueil</button>
                     </a>
             </form>
