@@ -26,10 +26,13 @@
                     <a href="#" class="text-sm text-blue-400 hover:text-purple-700 hover:underline mb-6">Vous avez oublié votre mot de passe ?</a>
                 </div>
                 <button class="bg-blue-200 hover:bg-blue-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl" type="submit">Se connecter</button>
+                <a href="index.php" class=" mt-4 text-center bg-blue-200 hover:bg-blue-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl">
+                    <button type="button" value="click here">Retour à l'accueil</button>
+                </a>
             </form>
+            
         </section>
     </section>
-
     <div class="max-w-lg mx-auto text-center mt-12 mb-6">
         <p class="text-white">Vous n'avez pas encore de compte ?    <a href="inscription.php" class="font-bold hover:underline">S'incrire</a></p>
     </div>
