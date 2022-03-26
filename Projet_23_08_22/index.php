@@ -1,18 +1,20 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon"/>
     <script src="assets/js/wow.min.js"></script>
     <title>PlanIT - Accueil</title>
 </head>
 <body class="bg-blue-500">
     <!--nav bar début -->
     <div id="positionNavBar" class="ud-header bg-transparent absolute top-0 
-        left-0 z-40 w-full flex items center">
+        left-0 z-40 w-full flex items-center">
         <!-- debut cliquables -->
         <div class="container">
             <!-- debut container-->
@@ -33,7 +35,7 @@
                                 <span class="relative w-[30px] h-[2px] my-[6px] block bg-white"></span>
                                 <span class="relative w-[30px] h-[2px] my-[6px] block bg-white"></span>
 
-                            </button>
+                        </button>
                         
                             <!--debut nav -->
                             <nav id="navbarCollapse" class="absolute
@@ -41,7 +43,7 @@
                                     bg-white lg:bg-transparent shadow-lg
                                     rounded-lg max-w-[250px] w-full
                                     lg:max-w-full lg:w-full right-4
-                                    top-full hidden :block lg:static lg:shadow-none">
+                                    top-full hidden lg:block lg:static lg:shadow-none">
                                 <!-- dans la nav -->
                                 <ul class="blcok lg:flex">
                                     <!-- Accueil -->
@@ -55,7 +57,7 @@
                                     </li>
                                     <!-- Contact -->
                                     <li class="relative group">
-                                        <a href="#" class="ud-menu-scroll text-base text-dark  lg:text-white
+                                        <a href="#contact" class="ud-menu-scroll text-base text-dark  lg:text-white
                                             lg:group-hover:opacity-70 lg:group-hover:text-white
                                             group-hover:text-primary py-2 lg:py-6 lg:inline-flex lg:px-0
                                             flex mx-8 lg:mr-0 lg:ml-7 xl:ml-12">
@@ -64,7 +66,7 @@
                                     </li>
                                     <!-- A propos -->
                                     <li class="relative group">
-                                        <a href="#" class="ud-menu-scroll text-base 
+                                        <a href="#about" class="ud-menu-scroll text-base 
                                             text-dark lg:text-white
                                             lg:group-hover:opacity-70 lg:group-hover:text-white
                                             group-hover:text-primary py-2
@@ -109,7 +111,7 @@
             <span class="block xl:inline"><br><br>Agenda facile = </span>
             <span class="block text-white xl:inline">vie facile</span>
           </h2>
-          <p class="mt-3 text-base text-blue-50 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Inscrivez-vous pour que vos clients puisse prendre un rendez-vous avec vous directement via planIT !</p>
+          <p class="mt-3 text-base text-blue-50 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Inscrivez-vous pour que vos clients puissent prendre un rendez-vous avec vous directement via PlanIT !</p>
           <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
             <div class="rounded-md shadow">
               <a href="inscription.php" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-800 hover:bg-white hover:text-blue-800 md:py-4 md:text-lg md:px-10"> S'inscrire </a>
