@@ -1,10 +1,7 @@
 <?php
+
+  require_once 'db/connexion/session.php';
   
-  
-  require_once 'app/pages/home.html';
-
-
-
-
+  isConnected();
 
 ?>
