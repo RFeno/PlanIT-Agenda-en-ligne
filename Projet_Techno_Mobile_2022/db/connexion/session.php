@@ -1,11 +1,11 @@
 <?php
 
 function isConnected(){
-    session_start();
     if(!isset($_SESSION['firstname'])) {
-        // header("Location: ../../index.php"); // TODO Mettre la page de l'utilisateur
+        session_start();
+        header("Location: app/pages/home.html");
     } else {
-        disconnect();
+        // TODO Afficher la page de l'utilisateur
     }
 }
 
