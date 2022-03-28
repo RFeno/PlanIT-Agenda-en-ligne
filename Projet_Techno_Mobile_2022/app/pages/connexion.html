@@ -13,7 +13,7 @@
         <h4 class="font-bold text-2xl">Connexion</h4>
 
         <section class="mt-10">
-            <form class="flex flex-col" method="POST" action="#">
+            <form class="flex flex-col" id="form">
                 <div class="mb-4 pt-1 rounded bg-gray-200">
                     <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="email">Adresse email</label>
                     <input type="text" id="email" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-blue-500 transition duration-500 px-3 pb-3">
@@ -25,7 +25,7 @@
                 <div class="flex justify-end">
                     <a href="#" class="text-sm text-blue-400 hover:text-purple-700 hover:underline mb-6">Vous avez oublié votre mot de passe ?</a>
                 </div>
-                <button class="bg-blue-200 hover:bg-blue-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl" type="submit">Se connecter</button>
+                <button class="bg-blue-200 hover:bg-blue-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl" id="connectBtn" type="button">Se connecter</button>
                 <a href="home.html" class=" mt-4 text-center bg-blue-200 hover:bg-blue-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl">
                     <button type="button" value="click here">Retour à l'accueil</button>
                 </a>
@@ -36,4 +36,45 @@
     <div class="max-w-lg mx-auto text-center mt-12 mb-6">
         <p class="text-white">Vous n'avez pas encore de compte ?    <a href="inscription.html" class="font-bold hover:underline">S'incrire</a></p>
     </div>
+
+    <script src="../assets/jquery/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#connectBtn').click(function() {
+                let mail = $('#email').val();
+                let passwd = $('#password').val();
+
+                $.ajax({
+                    type: "POST",
+                    url: "../../db/connexion/connexion.php",
+                    data: "mail=" + mail + "&passwd=" + passwd,
+                    success: function(data) {
+                        console.log(data);
+                    },       
+                    error: function (xhr, exception) {
+                        var msg = "";
+                        if (xhr.status === 0) {
+                            msg = "Not connect.\n Verify Network." + xhr.responseText;
+                        } else if (xhr.status == 404) {
+                            msg = "Requested page not found. [404]" + xhr.responseText;
+                        } else if (xhr.status == 500) {
+                            msg = "Internal Server Error [500]." +  xhr.responseText;
+                        } else if (exception === "parsererror") {
+                            msg = "Requested JSON parse failed.";
+                        } else if (exception === "timeout") {
+                            msg = "Time out error." + xhr.responseText;
+                        } else if (exception === "abort") {
+                            msg = "Ajax request aborted.";
+                        } else {
+                            msg = "Error:" + xhr.status + " " + xhr.responseText;
+                        }
+                    },
+                    done: function(json) {
+                        console.log("done");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
 </html>
