@@ -1,3 +1,10 @@
+<?php
+var_dump($_SESSION);
+  if (!isset($_SESSION['mail'])) {
+    // header("Location: home.html");
+  }
+?>
+
 <!doctype html>
 <html lang="fr" class="scroll-smooth">
 <head>

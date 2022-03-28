@@ -4,7 +4,7 @@ function isConnected(){
     if(!isset($_SESSION['mail'])) {
         header("Location: app/pages/home.html");
     } else {
-        // TODO Afficher la page de l'utilisateur
+        header("Location: app/pages/userhome.php");
     }
 }
 
