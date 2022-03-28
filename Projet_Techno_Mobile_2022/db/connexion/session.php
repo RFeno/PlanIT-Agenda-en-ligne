@@ -1,6 +1,7 @@
 <?php
 
 function isConnected(){
+    session_start();
     if(!isset($_SESSION['mail'])) {
         header("Location: app/pages/home.html");
     } else {
@@ -9,9 +10,9 @@ function isConnected(){
 }
 
 function disconnect() {
-    // session_start();
-    // header("Location: ../../index.php");
-    session_destroy() ;
+    session_start();
+    session_destroy();
+    header("Location: ../../index.php");
 }
 
 ?>
