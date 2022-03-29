@@ -1,3 +1,11 @@
+<?php
+  session_start();
+
+  if (!isset($_SESSION['mail'])) {
+    header("Location: home.html");
+  }
+?>
+
 <!doctype html>
 <html lang="fr" class="scroll-smooth">
 <head>
@@ -60,7 +68,7 @@
               <!-- Active: "bg-gray-100", Not Active: "" -->
               <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Profil</a>
               <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Paramètres</a>
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Se déconnecter</a>
+              <a href="../../db/connexion/logout.php" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Se déconnecter</a>
             </div>
           </div>
         </div>
@@ -140,6 +148,5 @@
     </ul>
   </footer>
   <!--fin footer-->
-
 </body>
 </html>

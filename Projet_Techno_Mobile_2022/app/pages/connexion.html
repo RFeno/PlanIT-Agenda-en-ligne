@@ -48,10 +48,14 @@
                     url: "../../db/connexion/connexion.php",
                     data: "mail=" + mail + "&passwd=" + passwd,
                     success: function(data) {
-                        console.log(data);
+                        if (data == 0) {
+                            document.location.href = "userhome.php";
+                        } else {
+                            console.log(data);
+                        }
                     },       
                     error: function (xhr, exception) {
-                        var msg = "";
+                        let msg;
                         if (xhr.status === 0) {
                             msg = "Not connect.\n Verify Network." + xhr.responseText;
                         } else if (xhr.status == 404) {
@@ -67,6 +71,7 @@
                         } else {
                             msg = "Error:" + xhr.status + " " + xhr.responseText;
                         }
+                        console.log(msg);
                     },
                     done: function(json) {
                         console.log("done");
