@@ -27,7 +27,7 @@ if (!empty($_POST['mail']) && !empty($_POST['passwd'])) {
             if(password_verify($passwd, $hashed_password)){
                 session_start();
                 $_SESSION['mail'] = $mail;
-                echo "Connexion réussie !";
+                echo 0;
             } else {
                 // TODO : Afficher mauvais mdp
                 echo "Connexion échouée ! (mauvais mdp)";

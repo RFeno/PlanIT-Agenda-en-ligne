@@ -1,5 +1,5 @@
 <?php
-	function connectDB($bdname = "projet_tm_db", $host = "localhost", $user = "root", $pass = ""){ // valeurs par défaut
+	function connectDB($bdname = "iw4t7y2l_planit", $host = "localhost", $user = "root", $pass = ""){ // valeurs par défaut
 		try {
 			$bdd = new PDO('mysql:host=' . $host .';dbname=' . $bdname . ';charset=utf8', $user, $pass);
 		} 
