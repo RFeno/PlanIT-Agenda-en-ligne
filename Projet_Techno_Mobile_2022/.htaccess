@@ -1,0 +1,8 @@
+Options -MultiViews
+
+RewriteEngine on
+
+RewriteRule ^accueil$ index.php
+RewriteRule ^connexion$ connexion.html
+RewriteRule ^inscription$ inscription.html
+RewriteRule ^accueil$ home.html

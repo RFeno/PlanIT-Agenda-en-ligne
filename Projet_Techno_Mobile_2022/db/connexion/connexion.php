@@ -1,39 +1,47 @@
 <?php
 
-require_once 'configurationBDO.php';
+if (!empty($_POST['mail']) && !empty($_POST['passwd'])) {
 
-$conn = connectDB();
-try {
-    $mail = $_POST["mail"];
-    $passwd = $_POST["passwd"];
+    require_once 'configurationBDO.php';
 
-    // sql 
-    $sql = "select * from user where mail=:mail";
-  
-    // Prepare statement
-    $stmt = $conn->prepare($sql);
+    $conn = connectDB();
+    try {
+        $mail = $_POST["mail"];
+        $passwd = $_POST["passwd"];
 
-    $stmt->bindParam(':mail', $mail, PDO::PARAM_STR, 50);
+        // sql 
+        $sql = "select * from user where mail=:mail";
     
-    $stmt->execute();
+        // Prepare statement
+        $stmt = $conn->prepare($sql);
 
-    $rs = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $stmt->bindParam(':mail', $mail, PDO::PARAM_STR, 50);
+        
+        $stmt->execute();
 
-    if (!empty($rs)) {
-        $hashed_password = $rs[0]['passwd'];
+        $rs = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-        if(password_verify($passwd, $hashed_password)){
-            session_start();
-            $_SESSION['mail'] = $mail;
-            echo "Connexion réussie !";
+        if (!empty($rs)) {
+            $hashed_password = $rs[0]['passwd'];
+
+            if(password_verify($passwd, $hashed_password)){
+                session_start();
+                $_SESSION['mail'] = $mail;
+                echo "Connexion réussie !";
+            } else {
+                // TODO : Afficher mauvais mdp
+                echo "Connexion échouée ! (mauvais mdp)";
+            }
         } else {
-            // TODO : Afficher mauvais mdp
-            echo "Connexion échouée ! (mauvais mdp)";
+            echo "Connexion échouée ! (mauvais mail)";
         }
-    } else {
-        echo "Connexion échouée ! (mauvais mail)";
+        
+    } catch(PDOException $e) {
+        echo $sql . "<br>" . $e->getMessage();
     }
-    
-} catch(PDOException $e) {
-    echo $sql . "<br>" . $e->getMessage();
+
+} else {
+    header("Location: ../../index.php");
 }
+
+?>
