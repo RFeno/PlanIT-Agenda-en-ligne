@@ -27,10 +27,9 @@
                 </div>
                 <button class="bg-blue-200 hover:bg-blue-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl" id="connectBtn">Se connecter</button>
                 <a href="home.html" class=" mt-4 text-center bg-blue-200 hover:bg-blue-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl">
-                    <button type="button" value="click here">Retour à l'accueil</button>
+                    <button type="button">Retour à l'accueil</button>
                 </a>
             </form>
-            
         </section>
     </section>
     <div class="max-w-lg mx-auto text-center mt-12 mb-6">
@@ -49,10 +48,14 @@
                     url: "../../db/connexion/connexion.php",
                     data: "mail=" + mail + "&passwd=" + passwd,
                     success: function(data) {
-                        console.log(data);
+                        if (data == 0) {
+                            document.location.href = "userhome.php";
+                        } else {
+                            console.log(data);
+                        }
                     },       
                     error: function (xhr, exception) {
-                        var msg = "";
+                        let msg;
                         if (xhr.status === 0) {
                             msg = "Not connect.\n Verify Network." + xhr.responseText;
                         } else if (xhr.status == 404) {
@@ -68,6 +71,7 @@
                         } else {
                             msg = "Error:" + xhr.status + " " + xhr.responseText;
                         }
+                        console.log(msg);
                     },
                     done: function(json) {
                         console.log("done");
