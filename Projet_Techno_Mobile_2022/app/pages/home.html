@@ -126,7 +126,8 @@
   <!-- fin main -->
 
   <!-- debut a propos-->
-<section id="about" class="py-12 bg-white mt-5">
+<div id="about"></div>
+<section  class="py-12 bg-white mt-5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="lg:text-center">
         <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">A propos</h2>
@@ -144,7 +145,7 @@
               </div>
               <p class="ml-16 text-lg leading-6 font-medium text-blue-900">Les entreprises</p>
             </dt>
-            <dd class="mt-2 ml-16 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+            <dd class="mt-2 ml-16 text-base text-gray-500">En tant qu'entreprise vous pouvez vous inscrire et avoir des employés qui gèrent leur agenda ou celui de l'entreprise</dd>
           </div>
   
           <div class="relative">
@@ -157,7 +158,7 @@
               </div>
               <p class="ml-16 text-lg leading-6 font-medium text-blue-900">Les employés</p>
             </dt>
-            <dd class="mt-2 ml-16 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+            <dd class="mt-2 ml-16 text-base text-gray-500">Si vous êtes employé ou indépendant, vous pouvez avoir un compte employé pour gérer votre agenda.</dd>
           </div>
   
           <div class="relative">
@@ -170,7 +171,7 @@
               </div>
               <p class="ml-16 text-lg leading-6 font-medium text-blue-900">Les clients</p>
             </dt>
-            <dd class="mt-2 ml-16 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+            <dd class="mt-2 ml-16 text-base text-gray-500">Inscrivez-vous pour pouvoir prendre des rendez-vous avec un employé en particulier,une entreprise ou encore un indépendant.</dd>
           </div>
   
           <div class="relative">
@@ -181,9 +182,9 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
                 </svg>
               </div>
-              <p class="ml-16 text-lg leading-6 font-medium text-blue-900">EUH</p>
+              <p class="ml-16 text-lg leading-6 font-medium text-blue-900">les créateurs</p>
             </dt>
-            <dd class="mt-2 ml-16 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+            <dd class="mt-2 ml-16 text-base text-gray-500">Nous sommes 2 : Adamaheto Saviour & Guillaume Victor, étudiants en informatique de gestion à la helha, nous avons décidé de développer un projet commun qui sera utile pour tous.</dd>
           </div>
         </dl>
       </div>
@@ -191,8 +192,38 @@
   </div>
 </section>
   <!-- fin a propos-->
+
+  <!--debut contact-->
+  <section id="contact" class="bg-blue-50 max-w-lg mx-auto p-8 md:p-12 my-10 rounded-lg shadow-2xl">
+    <h4 class="font-bold text-2xl">Contact</h4>
+    <section class="mt-10">
+        <form class="flex flex-col" method="POST" action="#">
+            <div id="nomprenom" class="flex flex-row">
+                <div class="mb-4 pt-1 rounded bg-gray-100 mr-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="name">Nom</label>
+                    <input type="text" id="name" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-blue-500 transition duration-500 px-3 pb-3">
+                </div>
+                <div class=" ml-4 mb-4 pt-1 rounded bg-gray-100">
+                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="firstname">Prenom</label>
+                    <input type="text" id="firstname" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-blue-500 transition duration-500 px-3 pb-3">
+                </div>
+            </div>
+            <div class="mb-4 pt-1 rounded bg-gray-100">
+                <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="email">Adresse email</label>
+                <input type="text" id="email" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-blue-500 transition duration-500 px-3 pb-3">
+            </div>
+            <div class="mb-4 pt-1 rounded bg-gray-100">
+                <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="password">Votre message</label>
+                <textarea type="text" id="password" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-blue-500 transition duration-500 px-3 pb-3"></textarea>
+            </div>
+                <button class="bg-blue-200 hover:bg-blue-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl" type="submit">Envoyer</button>
+               
+        </form>
+    </section>
+</section>
+  <!--fin contact-->
   <!-- debut footer-->
-  <footer class="bg-blue-500 p-4 md:flex md:items-center md:justify-between md:p-6">
+  <footer class="bg-blue-900 p-4 md:flex md:items-center md:justify-between md:p-6">
     <span class="text-sm text-blue-50 sm:text-center dark:text-blue-50">© 2022 <a href="https://rfeno.fr" class="hover:underline">PlanIT™</a>. Tous droits réservés.
     </span>
     <ul class="flex flex-wrap items-center mt-3 text-sm text-blue-50 sm:mt-0">

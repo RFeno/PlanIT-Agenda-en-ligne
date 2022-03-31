@@ -7,7 +7,7 @@
 ?>
 
 <!doctype html>
-<html lang="fr" class="scroll-smooth">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -134,7 +134,7 @@
   <!-- fin section main-->
   
   <!-- debut footer-->
-  <footer class=" aboslute bottom-0 p-4 rounded-lg shadow md:flex md:items-center md:justify-between md:p-6">
+  <footer class="aboslute bottom-0 p-4 rounded-lg shadow md:flex md:items-center md:justify-between md:p-6">
     <span class="text-sm text-blue-50 sm:text-center">© 2022 <a href="https://rfeno.fr" class="hover:underline">PlanIT™</a>. Tous les droits réservés.
     </span>
     <ul class="flex flex-wrap items-center mt-3 text-sm text-blue-50 sm:mt-0">
