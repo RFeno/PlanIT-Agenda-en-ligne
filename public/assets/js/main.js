@@ -1,4 +1,4 @@
-(function () {
+$(document).ready(function() {
   "use strict";
 
   // ===== responsive navbar
@@ -50,4 +50,4 @@
     t--;
     return (-c / 2) * (t * (t - 2) - 1) + b;
   };
-})();
+});

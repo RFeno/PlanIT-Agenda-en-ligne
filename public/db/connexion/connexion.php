@@ -41,7 +41,8 @@ if (!empty($_POST['mail']) && !empty($_POST['passwd'])) {
     }
 
 } else {
-    header("Location: ../../index.php");
+    var_dump($_POST);
+    // header("Location: home");
 }
 
 ?>

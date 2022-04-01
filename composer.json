@@ -1,0 +1,17 @@
+{
+    "name": "vic/projet",
+    "autoload": {
+        "psr-4": {
+            "Vic\\Projet\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "VicGuillaume",
+            "email": "vicoxtreme@gmail.com"
+        }
+    ],
+    "require": {
+        "altorouter/altorouter": "^2.0"
+    }
+}
