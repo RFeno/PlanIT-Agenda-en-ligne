@@ -7,12 +7,12 @@
 
   $router = new AltoRouter();
 
-  $router->map('GET', '/projet/userhome', 'userhome', 'userhome');
-  $router->map('GET', '/projet/home', 'home', 'home');
+  $router->map('GET', '/userhome', 'userhome', 'userhome');
+  $router->map('GET', '/home', 'home', 'home');
 
-  $router->map('GET', '/projet/connexion', 'connexion', 'connexion');
-  $router->map('GET', '/projet/inscription', 'inscription', 'inscription');
-  $router->map('GET', '/projet/deconnexion', 'logout', 'logout');
+  $router->map('GET', '/connexion', 'connexion', 'connexion');
+  $router->map('GET', '/inscription', 'inscription', 'inscription');
+  $router->map('GET', '/deconnexion', 'logout', 'logout');
 
   $match = $router->match();
   
@@ -22,7 +22,7 @@
     require_once "../app/pages/{$match['target']}.php";
     
   } else {
-    header('location: /projet/home');
+    header('location: /home');
   }
 
   
