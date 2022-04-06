@@ -21,7 +21,7 @@
     </head>
     <body class="bg-blue-500">
         <!--nav bar début -->
-        <div style="top:0; position:fixed" id="positionNavBar" class="bg-blue-500 ud-header  absolute top-0 
+        <div style="top:0; position:fixed" id="positionNavBar" class="bg-blue-900 ud-header  absolute top-0 
             left-0 z-40 w-full flex items-center">
             <!-- debut cliquables -->
             <div class="container">
