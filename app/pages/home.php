@@ -19,7 +19,7 @@
         <script src="/assets/js/main.js"></script>
         <title>PlanIT</title>
     </head>
-    <body class="bg-blue-500">
+    <body class="bg-blue-500 h-full">
         <!--nav bar début -->
         <div style="top:0; position:fixed" id="positionNavBar" class="bg-blue-900 ud-header  absolute top-0 
             left-0 z-40 w-full flex items-center">
@@ -30,7 +30,7 @@
                     <!--debut logo -->
                     <div id="logoImage" class="px-4 w-60 max-w-full">
                                 <a href="#" class="navbar-logo w-full block">
-                                    <img src="/images/logo.png" alt="logo de plan it" class="w-8/12 header-logo"/>
+                                    <img src="/images/logoInverse.png" alt="logo de plan it" class="w-8/12 header-logo"/>
                                 </a>
                     </div>
                     <!--fin logo -->
@@ -229,13 +229,15 @@
             </form>
         </section>
     </section>
-      <footer class="bg-blue-900 p-4 md:flex md:items-center md:justify-between md:p-6">
-        <span class="text-sm text-blue-50 sm:text-center dark:text-blue-50">© 2022 <a href="https://rfeno.fr" class="hover:underline">PlanIT™</a>. Tous droits réservés.
+     <!-- debut footer-->
+     <footer class="sticky top-[100vh] w-full bg-blue-900 absolute bottom-0 p-4  md:items-center md:justify-between md:p-6">
+        <span class="text-sm text-blue-50 sm:text-center">© 2022 <a href="https://rfeno.fr" class="hover:underline">PlanIT™</a>. Tous les droits réservés.
         </span>
         <ul class="flex flex-wrap items-center mt-3 text-sm text-blue-50 sm:mt-0">
             <li>
-                <a href="#about" class="mr-4 hover:underline md:mr-6 ">A propos</a>
+                <a href="#about" class="mr-4 hover:underline md:mr-6 ">About</a>
             </li>
+
             <li>
                 <a href="#contact" class="hover:underline">Contact</a>
             </li>

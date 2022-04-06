@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="h-full">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,7 +11,7 @@
         <script src="/assets/jquery/jquery.js"></script>
         <title>PlanIT</title>
     </head>
-    <body class="bg-blue-500">
+    <body class="bg-blue-500 h-full">
       <!-- debut nav bar -->
 
       <nav class="bg-blue-900">
@@ -126,14 +126,14 @@
       <!--fin main -->
       
       
-      <!-- debut footer-->
-      <footer class="mt-5 bg-blue-900  p-4 md:flex md:items-center md:justify-between md:p-6">
-        <span class="text-sm text-blue-50 md:text-center sm:text-center">© 2022 <a href="https://rfeno.fr" class="hover:underline">PlanIT™</a>. Tous les droits réservés.
+      <footer class="sticky top-[100vh] w-full bg-blue-900 absolute bottom-0 p-4  md:items-center md:justify-between md:p-6">
+        <span class="text-sm text-blue-50 sm:text-center">© 2022 <a href="https://rfeno.fr" class="hover:underline">PlanIT™</a>. Tous les droits réservés.
         </span>
         <ul class="flex flex-wrap items-center mt-3 text-sm text-blue-50 sm:mt-0">
             <li>
-                <a href="#about" class="mr-4 hover:underline md:mr-6 ">A propos</a>
+                <a href="#about" class="mr-4 hover:underline md:mr-6 ">About</a>
             </li>
+
             <li>
                 <a href="#contact" class="hover:underline">Contact</a>
             </li>

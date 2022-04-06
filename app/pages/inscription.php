@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" class="h-full">
+<html lang="fr" class="h-full w-1/1 relative">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -36,9 +36,6 @@
                     <div class="mb-4 pt-1 rounded bg-gray-100">
                         <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="password">Mot de passe</label>
                         <input type="password" id="password" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-blue-500 transition duration-500 px-3 pb-3">
-                    </div>
-                    <div class="flex justify-end">
-                        <a href="<?= $router->generate('connexion'); ?>" class="text-sm text-blue-400 hover:text-purple-700 hover:underline mb-6">Vous avez déjà un compte ?</a>
                     </div>
                         <button class="bg-blue-200 hover:bg-blue-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl" type="submit">S'inscrire</button>
                         <a href="<?= $router->generate('home') ?>" class=" mt-4 text-center bg-blue-200 hover:bg-blue-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl">

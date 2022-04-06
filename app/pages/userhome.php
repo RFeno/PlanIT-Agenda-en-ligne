@@ -3,8 +3,6 @@
     header('location: ' . $router->generate('home'));
   }
 ?>
-
-<!DOCTYPE html>
 <html lang="fr" class="h-full">
     <head>
         <meta charset="UTF-8">
@@ -14,21 +12,18 @@
         <link rel="stylesheet" href="/assets/css/animate.css" />
         <link rel="stylesheet" href="/assets/css/tailwind.css" />
         <link rel="shortcut icon" href="/assets/images/logo.png" type="image/x-icon"/>
-        <script src="/assets/js/wow.min.js"></script>
-        <script src="/assets/jquery/jquery.js"></script>
-        <script src="/assets/js/main.js"></script>
         <title>PlanIT</title>
     </head>
-    <body class="bg-blue-500">
+    <body class="bg-blue-900 py-5">
       <!-- debut nav bar -->
 
-      <nav class="bg-gray-800">
+      <nav class="bg-blue-900">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div class="relative flex items-center justify-between h-16">
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
               <!-- Mobile menu button-->
               <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
+                <span class="sr-only">Ouvrir menu</span>
               </button>
             </div>
             <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
@@ -38,13 +33,13 @@
               <div class="hidden sm:block sm:ml-6">
                 <div class="flex space-x-4">
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                  <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Tableau de bord</a>
+                  <a href="#" class="bg-blue-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Tableau de bord</a>
       
-                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Section entreprise</a>
+                  <a href="#" class="text-white hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Section entreprise</a>
       
-                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Section employé</a>
+                  <a href="#" class="text-white hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Section employé</a>
       
-                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Section client</a>
+                  <a href="#" class="text-white hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Section client</a>
                 </div>
               </div>
             </div>
@@ -137,7 +132,7 @@
       <!-- fin section main-->
       
       <!-- debut footer-->
-      <footer class="aboslute bottom-0 p-4 rounded-lg shadow md:flex md:items-center md:justify-between md:p-6">
+      <footer class="sticky top-[100vh] w-full bg-blue-900 absolute bottom-0 p-4  md:items-center md:justify-between md:p-6">
         <span class="text-sm text-blue-50 sm:text-center">© 2022 <a href="https://rfeno.fr" class="hover:underline">PlanIT™</a>. Tous les droits réservés.
         </span>
         <ul class="flex flex-wrap items-center mt-3 text-sm text-blue-50 sm:mt-0">
