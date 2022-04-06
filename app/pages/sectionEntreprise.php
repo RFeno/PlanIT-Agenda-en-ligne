@@ -87,43 +87,111 @@
       </nav>
       <!-- fin nav bar-->
 
-      <!-- debut main -->
+      <!-- debut entreprise -->
       <div class="w-3/4 mx-auto">
-            <div class="px-4">
-              <h3 class="mt-8 text-lg font-medium leading-6 text-white">Entreprise</h3>
-              <p class="mt-1 mb-5 text-sm text-white">formulaire pour ajouter votre entreprise au site</p>
-            </div>
+        <div class="px-4">
+          <h3 class="mt-8 text-lg font-medium leading-6 text-white">Création d'entreprise</h3>
+          <p class="mt-1 mb-5 text-sm text-white">formulaire pour ajouter votre entreprise au site</p>
+        </div>
 
-            <form action="#" method="POST">
-              <div class="shadow sm:rounded-md sm:overflow-hidden">
-                <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
-                      <label for="company" class="block text-sm font-medium text-blue-700"> Nom entreprise </label>
-                      <div class="mt-1 flex rounded-md shadow-sm">
-                        <input type="text" name="company" id="company" class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="PlanIT">
-                      </div>
+        <form action="#" method="POST">
+          <div class="shadow sm:rounded-md sm:overflow-hidden">
+            <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
+              <label for="company" class="block text-sm font-medium text-blue-700"> Nom entreprise </label>
+                <div class="mt-1 flex rounded-md shadow-sm">
+                  <input type="text" name="company" id="company" class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="PlanIT">
+                </div>
 
-                      <div>
-                        <label for="about" class="block text-sm font-medium text-blue-700"> A propos </label>
-                        <p class="mt-2 text-sm text-blue-500">Brève description de votre entreprise</p>
-                        <div class="mt-1">
-                          <textarea id="about" name="about" rows="3" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md" placeholder="PlanIT une entreprise de gestion d'agenda en ligne !"></textarea>
-                        </div>
-                      </div>
+              <div>
+                <label for="about" class="block text-sm font-medium text-blue-700"> A propos </label>
+                  <p class="mt-2 text-sm text-blue-500">Brève description de votre entreprise</p>
+                  <div class="mt-1">
+                    <textarea id="about" name="about" rows="3" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md" placeholder="PlanIT une entreprise de gestion d'agenda en ligne !"></textarea>
+                  </div>
+              </div>
 
-                      <div>
-                        <label class="block text-sm font-medium text-gray-700"> Adresse </label>
-                        <div class="mt-1 flex rounded-md shadow-sm">
-                          <input type="text" name="adresse" id="adresse" class="focus:ring-blue-500 focus:border-blue-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="Rue de la vesdre, 18"/>
-                        </div>
-                      </div>
-                      <div class="px-4 py-3 text-center sm:px-6">
-                        <button type="submit" class=" justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Créer l'entreprise</button>
-                      </div>
+              <div>
+              <label class="block text-sm font-medium text-blue-700"> Adresse </label>
+                <div class="mt-1 flex rounded-md shadow-sm">
+                  <input type="text" name="adresse" id="adresse" class="focus:ring-blue-500 focus:border-blue-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="Rue de la vesdre, 18"/>
+                </div>
+              </div>
+
+              <fieldset>
+                <div>
+                  <legend class="text-blue-900 font-medium ">Type d'entreprise</legend>
+                  <p class="text-sm text-blue-500">Choissisez le type d'entreprise pour savoir si un employé peut demander à rejoindre votre entreprise</p>
+                </div>
+                <div class="mt-4 space-y-4">
+                  <div class="flex items-center">
+                    <input id="independant" name="type-entreprise" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-blue-300">
+                    <label for="independant" class="ml-3 block text-sm font-medium text-blue-700"> Indépendant </label>
+                  </div>
+                  <div class="flex items-center">
+                    <input id="entreprise" name="type-entreprise" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-blue-300">
+                    <label for="entreprise" class="ml-3 block text-sm font-medium text-blue-700"> Entreprise </label>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div class="bg-blue-50 px-4 py-3 text-center sm:px-6">
+                <button type="submit" class=" inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Créer l'entreprise</button>
+              </div>
                     </div>
                   </div>
                 </form>
               </div>
-      <!--fin main -->
+
+        <!--fin entreprise -->
+
+        <!--debut options -->
+        <div class="w-3/4 mx-auto mb-5 mt-5">
+          <div class="px-4">
+            <h3 class="mt-8 text-lg font-medium leading-6 text-white">Notifications</h3>
+            <p class="mt-1 mb-5 text-sm text-white">paramétrer les notifications d'entreprise</p>
+          </div>
+          <form action="#" method="POST">
+            <div class="shadow overflow-hidden sm:rounded-md">
+              <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
+                <fieldset>
+                  <legend class="text-base font-medium text-blue-900">Par mail</legend>
+                  <div class="mt-4 space-y-4">
+                    <div class="flex items-start">
+                      <div class="flex items-center h-5">
+                        <input id="comments" name="comments" type="checkbox" class="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded">
+                      </div>
+                      <div class="ml-3 text-sm">
+                        <label for="comments" class="font-medium text-blue-700">Client</label>
+                        <p class="text-gray-500">Soyez notifié quand un client demande un rendez-vous</p>
+                      </div>
+                    </div>
+                    <div class="flex items-start">
+                      <div class="flex items-center h-5">
+                        <input id="candidates" name="candidates" type="checkbox" class="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded">
+                      </div>
+                      <div class="ml-3 text-sm">
+                        <label for="candidates" class="font-medium text-blue-700">Employé</label>
+                        <p class="text-gray-500">Soyez notifié quand un utilisateur/employé demande à rejoindre votre entreprise</p>
+                      </div>
+                    </div>
+                    <div class="flex items-start">
+                      <div class="flex items-center h-5">
+                        <input id="offers" name="offers" type="checkbox" class="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded">
+                      </div>
+                      <div class="ml-3 text-sm">
+                        <label for="offers" class="font-medium text-blue-700">Offres</label>
+                        <p class="text-gray-500">Recevez un mail quand</p>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="px-4 py-3 bg-blue-50 text-center sm:px-6">
+                <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Sauvegarder</button>
+              </div>
+            </div>
+          </form>
+      </div>
       
       
       <footer class="sticky top-[100vh] w-full bg-blue-900 absolute bottom-0 p-4  md:items-center md:justify-between md:p-6">
